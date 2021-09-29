@@ -28,10 +28,10 @@ namespace Vistas
         protected void FiltrarSucursal(object sender, EventArgs e)
         {
             GestionSucursales sucu = new GestionSucursales();
-            //int id = Convert.ToInt32(txtIDsucursal.Text);
             gvSucursales.DataSource = sucu.getSucursalID(Convert.ToInt32(txtIDsucursal.Text));
             gvSucursales.DataBind();
             txtIDsucursal.Text = "";
+            
         }
     }
 }
