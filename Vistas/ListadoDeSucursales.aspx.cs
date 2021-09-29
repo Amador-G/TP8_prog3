@@ -27,11 +27,26 @@ namespace Vistas
 
         protected void FiltrarSucursal(object sender, EventArgs e)
         {
+            if(txtIDsucursal.Text == "")
+            {
+                GestionSucursales sucu = new GestionSucursales();
+                gvSucursales.DataSource = sucu.getTabla();
+                gvSucursales.DataBind();
+            }
+            else            
+            {
+                GestionSucursales sucu = new GestionSucursales();
+                gvSucursales.DataSource = sucu.getSucursalID(Convert.ToInt32(txtIDsucursal.Text));
+                gvSucursales.DataBind();
+                txtIDsucursal.Text = "";
+            }
+        }
+
+        protected void MostarTodo(object sender, EventArgs e)
+        {
             GestionSucursales sucu = new GestionSucursales();
-            gvSucursales.DataSource = sucu.getSucursalID(Convert.ToInt32(txtIDsucursal.Text));
+            gvSucursales.DataSource = sucu.getTabla();
             gvSucursales.DataBind();
-            txtIDsucursal.Text = "";
-            
         }
     }
 }

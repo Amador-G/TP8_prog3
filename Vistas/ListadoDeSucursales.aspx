@@ -64,7 +64,7 @@
                 &nbsp;
                     <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="FiltrarSucursal" />
 &nbsp;
-                    <asp:Button ID="btnMostarTodos" runat="server" Text="Mostrar todos" />
+                    <asp:Button ID="btnMostarTodos" runat="server" Text="Mostrar todos" OnClick="MostarTodo" />
                 </td>
                 <td class="auto-style13">&nbsp;</td>
             </tr>
