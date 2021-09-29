@@ -19,11 +19,11 @@ namespace Entidades
 
         }
 
-        public int IdSucursal1 { get => IdSucursal; set => IdSucursal = value; }
-        public string NombreSucursal1 { get => NombreSucursal; set => NombreSucursal = value; }
-        public string Descripcion1 { get => Descripcion; set => Descripcion = value; }
-        public int IdProvincia1 { get => IdProvincia; set => IdProvincia = value; }
-        public string Direccion1 { get => Direccion; set => Direccion = value; }
+        public int Id_sucu { get => IdSucursal; set => IdSucursal = value; }
+        public string Nombre_Sucu { get => NombreSucursal; set => NombreSucursal = value; }
+        public string Desc_Sucu { get => Descripcion; set => Descripcion = value; }
+        public int Id_Prov { get => IdProvincia; set => IdProvincia = value; }
+        public string Dire_Sucu { get => Direccion; set => Direccion = value; }
     }
 
     

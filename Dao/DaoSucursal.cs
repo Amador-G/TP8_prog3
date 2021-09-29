@@ -16,18 +16,24 @@ namespace Dao
 
         public Sucursal getSucursal(Sucursal cat)
         {
-            DataTable tabla = ds.ObtenerTabla("Sucursal", "Select * from Sucursal where Id_Sucursal=" + cat.IdSucursal1);
-            cat.IdSucursal1 = Convert.ToInt32(tabla.Rows[0][0].ToString());
-            cat.NombreSucursal1 = tabla.Rows[0][1].ToString();
-            cat.Descripcion1 = tabla.Rows[0][2].ToString();
-            cat.IdProvincia1 = Convert.ToInt32(tabla.Rows[0][3].ToString());
-            cat.Direccion1 = tabla.Rows[0][4].ToString();
+            DataTable tabla = ds.ObtenerTabla("Sucursal", "Select * from Sucursal where Id_Sucursal=" + cat.Id_sucu);
+            cat.Id_sucu = Convert.ToInt32(tabla.Rows[0][0].ToString());
+            cat.Nombre_Sucu = tabla.Rows[0][1].ToString();
+            cat.Desc_Sucu = tabla.Rows[0][2].ToString();
+            cat.Id_Prov = Convert.ToInt32(tabla.Rows[0][3].ToString());
+            cat.Dire_Sucu = tabla.Rows[0][4].ToString();
             return cat;
+        }
+
+        public DataTable GetTablaSucID(int ID)
+        {
+            DataTable tabla = ds.ObtenerTabla("Sucursal", "Select Id_Sucursal,NombreSucursal,DescripcionSucursal,Id_ProvinciaSucursal,DireccionSucursal from Sucursal where Id_Sucursal=" + ID);
+            return tabla;
         }
 
         public Boolean existeSucursal(Sucursal cat)
         {
-            string consulta = "Select * from Sucursal where NombreSucursal='" + cat.NombreSucursal1 + "'";
+            string consulta = "Select * from Sucursal where NombreSucursal='" + cat.Nombre_Sucu + "'";
             return ds.existe(consulta);
         }
 
@@ -37,6 +43,11 @@ namespace Dao
             return tabla;
         }
 
+        public DataTable getTablaProvincias()
+        {
+            DataTable tabla = ds.ObtenerTabla("Provincia", "Select Id_Provincia,DescripcionProvincia from Provincia");
+            return tabla;
+        }
         public int eliminarSucursal(Sucursal cat)
         {
             SqlCommand comando = new SqlCommand();
@@ -46,7 +57,7 @@ namespace Dao
 
         public int agregarSucursal(Sucursal cat)
         {
-            cat.IdSucursal1 = ds.ObtenerMaximo("Select max(idSucursal)from Sucursal") + 1;
+            cat.Id_sucu = ds.ObtenerMaximo("Select max(idSucursal)from Sucursal") + 1;
             SqlCommand comando = new SqlCommand();
             ArmarParametrosSucursalAgregar(ref comando, cat);
             return ds.EjecutarProcedimientoAlmacenado(comando, "spAgregarSucursal");
@@ -56,22 +67,22 @@ namespace Dao
         {
             SqlParameter SqlParametros = new SqlParameter();
             SqlParametros = comando.Parameters.Add("@IDSUCURSAL", SqlDbType.Int);
-            SqlParametros.Value = cat.IdSucursal1;
+            SqlParametros.Value = cat.Id_sucu;
         }
 
         private void ArmarParametrosSucursalAgregar(ref SqlCommand comando, Sucursal cat)
         {
             SqlParameter SqlParametros = new SqlParameter();
             SqlParametros = comando.Parameters.Add("@IDSUCURSAL", SqlDbType.Int);
-            SqlParametros.Value = cat.IdSucursal1;
-            SqlParametros = comando.Parameters.Add("@NOMBRESUCURSAL", SqlDbType.NVarChar);
-            SqlParametros.Value = cat.NombreSucursal1;
+            SqlParametros.Value = cat.Id_sucu;
+            SqlParametros = comando.Parameters.Add("@NOMBRESUCU", SqlDbType.NVarChar);
+            SqlParametros.Value = cat.Nombre_Sucu;
             SqlParametros = comando.Parameters.Add("@DESCRIPCION", SqlDbType.NVarChar);
-            SqlParametros.Value = cat.Descripcion1;
-            SqlParametros = comando.Parameters.Add("@IDPROVINCIA", SqlDbType.NVarChar);
-            SqlParametros.Value = cat.IdProvincia1;
-            SqlParametros = comando.Parameters.Add("@DIRECCION", SqlDbType.NVarChar);
-            SqlParametros.Value = cat.Direccion1;
+            SqlParametros.Value = cat.Desc_Sucu;
+            SqlParametros = comando.Parameters.Add("@IDPROVSUCURSAL", SqlDbType.Int);
+            SqlParametros.Value = cat.Id_Prov;
+            SqlParametros = comando.Parameters.Add("@DIRECCIONSUCU", SqlDbType.NVarChar);
+            SqlParametros.Value = cat.Dire_Sucu;
         }
     }
 }

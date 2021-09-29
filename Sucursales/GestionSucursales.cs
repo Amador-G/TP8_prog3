@@ -7,21 +7,36 @@ using System.Data;
 using Entidades;
 using Dao;
 
+
 namespace Sucursales
 {
-    class GestionSucursales
+    public class GestionSucursales
     {
+        public DataTable getProvincias()
+        {
+            DaoSucursal dao = new DaoSucursal();
+            return dao.getTablaProvincias();
+        }
         public DataTable getTabla()
         {
             DaoSucursal dao = new DaoSucursal();
             return dao.getTablaSucursal();
         }
 
+        public DataTable getSucursalID(int ID)
+        {
+            DaoSucursal dao = new DaoSucursal();
+
+            DataTable h = dao.GetTablaSucID(ID);
+
+            return h;
+        }
+
         public Sucursal get(int id)
         {
             DaoSucursal dao = new DaoSucursal();
             Sucursal cat = new Sucursal();
-            cat.IdSucursal1 = id;
+            cat.Id_sucu = id;
             return dao.getSucursal(cat);
         }
 
@@ -29,7 +44,7 @@ namespace Sucursales
         {
             DaoSucursal dao = new DaoSucursal();
             Sucursal cat = new Sucursal();
-            cat.IdSucursal1 = id;
+            cat.Id_sucu = id;
             int op = dao.eliminarSucursal(cat);
             if (op == 1)
             {
@@ -46,7 +61,7 @@ namespace Sucursales
             int cantFilas = 0;
 
             Sucursal cat = new Sucursal();
-            cat.NombreSucursal1 = nombre;
+            cat.Nombre_Sucu = nombre;
 
             DaoSucursal dao = new DaoSucursal();
             if (dao.existeSucursal(cat) == false)

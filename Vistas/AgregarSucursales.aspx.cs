@@ -13,7 +13,14 @@ namespace Vistas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-         
+            if (!IsPostBack)
+            {
+                GestionSucursales Provincias = new GestionSucursales();
+                ddlProvinciasSuc.DataSource = Provincias.getProvincias();
+                ddlProvinciasSuc.DataTextField = "DescripcionProvincia";
+                ddlProvinciasSuc.DataValueField = "Id_Provincia";
+                ddlProvinciasSuc.DataBind();
+            }
         }
     }
 }

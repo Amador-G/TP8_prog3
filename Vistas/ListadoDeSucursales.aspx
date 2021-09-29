@@ -10,29 +10,26 @@
         .auto-style1 {
             width: 100%;
         }
-        .auto-style2 {
-            width: 235px;
-        }
         .auto-style3 {
-            width: 226px;
-        }
-        .auto-style4 {
-            width: 159px;
+            width: 205px;
         }
         .auto-style5 {
-            width: 226px;
-            height: 23px;
-        }
-        .auto-style6 {
-            width: 159px;
-            height: 23px;
-        }
-        .auto-style7 {
-            width: 235px;
+            width: 205px;
             height: 23px;
         }
         .auto-style8 {
             height: 23px;
+            width: 178px;
+        }
+        .auto-style11 {
+            width: 325px;
+        }
+        .auto-style12 {
+            width: 325px;
+            height: 23px;
+        }
+        .auto-style13 {
+            width: 178px;
         }
     </style>
 </head>
@@ -43,76 +40,67 @@
                 <td class="auto-style3">
                     <asp:HyperLink ID="hpAgregarSucursales" runat="server" NavigateUrl="~/AgregarSucursales.aspx">Agregar sucursales</asp:HyperLink>
                 </td>
-                <td class="auto-style4">
+                <td class="auto-style11">
                     <asp:HyperLink ID="hpListadoSucursales" runat="server" NavigateUrl="~/ListadoDeSucursales.aspx">Listado de sucursales</asp:HyperLink>
                 </td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>
+                <td class="auto-style13">
                     <asp:HyperLink ID="hpEliminarSucursal" runat="server" NavigateUrl="~/EliminarSucursales.aspx">Eliminar sucursal</asp:HyperLink>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">LISTADO DE SUCURSALES : </td>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">Busqueda (ingrese ID sucursal) :</td>
-                <td class="auto-style4">
+                <td class="auto-style11">
                     <asp:TextBox ID="txtIDsucursal" runat="server"></asp:TextBox>
-                </td>
-                <td class="auto-style2">
-                    <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" />
+                &nbsp;
+                    <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="FiltrarSucursal" />
 &nbsp;
                     <asp:Button ID="btnMostarTodos" runat="server" Text="Mostrar todos" />
                 </td>
-                <td>&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">
+                    &nbsp;</td>
+                <td class="auto-style11">
                     <asp:GridView ID="gvSucursales" runat="server">
                     </asp:GridView>
                 </td>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style5"></td>
-                <td class="auto-style6"></td>
-                <td class="auto-style7"></td>
+                <td class="auto-style12"></td>
                 <td class="auto-style8"></td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
             </tr>
         </table>
         <div>

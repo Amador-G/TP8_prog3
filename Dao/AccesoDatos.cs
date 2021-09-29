@@ -9,7 +9,7 @@ using Entidades;
 
 namespace Dao
 {
-    class AccesoDatos
+     public class AccesoDatos
     {
         string BDsucursales = 
             "Data Source=LocalHost\\SQLEXPRESS;Initial Catalog=BDSucursales;Integrated Security=True";

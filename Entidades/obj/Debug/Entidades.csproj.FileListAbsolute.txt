@@ -1,0 +1,6 @@
+F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Entidades\bin\Debug\Entidades.dll
+F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Entidades\bin\Debug\Entidades.pdb
+F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Entidades\obj\Debug\Entidades.dll
+F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Entidades\obj\Debug\Entidades.pdb
