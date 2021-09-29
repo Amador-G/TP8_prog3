@@ -73,7 +73,5 @@ namespace Dao
             SqlParametros = comando.Parameters.Add("@DIRECCION", SqlDbType.NVarChar);
             SqlParametros.Value = cat.Direccion1;
         }
-
-
     }
 }
