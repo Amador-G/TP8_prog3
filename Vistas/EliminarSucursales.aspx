@@ -41,7 +41,7 @@
                     <td>Ingrese ID de sucursal : </td>
                     <td>
                         <asp:TextBox ID="txtEliminarSucursal" runat="server"></asp:TextBox>
-&nbsp;<asp:Button ID="btnEliminar" runat="server" Text="Eliminar" />
+&nbsp;<asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>
