@@ -19,8 +19,8 @@ namespace Vistas
             if (!IsPostBack)
             {
                 GestionSucursales neg = new GestionSucursales();
-                DataTable tablaCategoria = neg.getTabla();
-                gvSucursales.DataSource = tablaCategoria;
+                DataTable TablaSucu = neg.getTabla();
+                gvSucursales.DataSource = TablaSucu;
                 gvSucursales.DataBind();
             }
         }

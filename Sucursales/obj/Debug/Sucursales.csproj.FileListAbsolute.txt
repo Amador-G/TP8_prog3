@@ -9,3 +9,14 @@ F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Sucursale
 F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Sucursales\obj\Debug\Sucursales.csproj.CopyComplete
 F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Sucursales\obj\Debug\Sucursales.dll
 F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Sucursales\obj\Debug\Sucursales.pdb
+C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\bin\Debug\Sucursales.dll
+C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\bin\Debug\Sucursales.pdb
+C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\bin\Debug\Dao.dll
+C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\bin\Debug\Entidades.dll
+C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\bin\Debug\Dao.pdb
+C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\bin\Debug\Entidades.pdb
+C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\obj\Debug\Sucursales.csproj.AssemblyReference.cache
+C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\obj\Debug\Sucursales.csproj.CoreCompileInputs.cache
+C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\obj\Debug\Sucursales.csproj.CopyComplete
+C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\obj\Debug\Sucursales.dll
+C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\obj\Debug\Sucursales.pdb

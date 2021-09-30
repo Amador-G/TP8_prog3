@@ -14,6 +14,8 @@ namespace Dao
     {
         AccesoDatos ds = new AccesoDatos();
 
+       const string ConsultaGenerica = "Select Id_Sucursal,NombreSucursal,DescripcionSucursal,DescripcionProvincia,DireccionSucursal from Sucursal inner join Provincia ON Id_Provincia = Id_ProvinciaSucursal";
+
         public Sucursal getSucursal(Sucursal cat)
         {
             DataTable tabla = ds.ObtenerTabla("Sucursal", "Select * from Sucursal where Id_Sucursal=" + cat.Id_sucu);
@@ -27,7 +29,8 @@ namespace Dao
 
         public DataTable GetTablaSucID(int ID)
         {
-            DataTable tabla = ds.ObtenerTabla("Sucursal", "Select Id_Sucursal,NombreSucursal,DescripcionSucursal,Id_ProvinciaSucursal,DireccionSucursal from Sucursal where Id_Sucursal=" + ID);
+            String NuevaConsul = ConsultaGenerica + " where Id_Sucursal=";
+            DataTable tabla = ds.ObtenerTabla("Sucursal", NuevaConsul  + ID);
             return tabla;
         }
 
@@ -39,7 +42,7 @@ namespace Dao
 
         public DataTable getTablaSucursal()
         {
-            DataTable tabla = ds.ObtenerTabla("Sucursal", "Select Id_Sucursal,NombreSucursal,DescripcionSucursal,Id_ProvinciaSucursal,DireccionSucursal from Sucursal");
+            DataTable tabla = ds.ObtenerTabla("Sucursal", ConsultaGenerica);
             return tabla;
         }
 

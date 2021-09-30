@@ -7,3 +7,12 @@ F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Dao\obj\D
 F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Dao\obj\Debug\Dao.csproj.CopyComplete
 F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Dao\obj\Debug\Dao.dll
 F:\UTN\Cuatrimestre 3\Programacion III\Aplicaciones web\TP8_GRUPO_N°1\Dao\obj\Debug\Dao.pdb
+C:\Users\Sebas\Source\Repos\TP8_prog3\Dao\bin\Debug\Dao.dll
+C:\Users\Sebas\Source\Repos\TP8_prog3\Dao\bin\Debug\Dao.pdb
+C:\Users\Sebas\Source\Repos\TP8_prog3\Dao\bin\Debug\Entidades.dll
+C:\Users\Sebas\Source\Repos\TP8_prog3\Dao\bin\Debug\Entidades.pdb
+C:\Users\Sebas\Source\Repos\TP8_prog3\Dao\obj\Debug\Dao.csproj.AssemblyReference.cache
+C:\Users\Sebas\Source\Repos\TP8_prog3\Dao\obj\Debug\Dao.csproj.CoreCompileInputs.cache
+C:\Users\Sebas\Source\Repos\TP8_prog3\Dao\obj\Debug\Dao.csproj.CopyComplete
+C:\Users\Sebas\Source\Repos\TP8_prog3\Dao\obj\Debug\Dao.dll
+C:\Users\Sebas\Source\Repos\TP8_prog3\Dao\obj\Debug\Dao.pdb
