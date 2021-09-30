@@ -56,14 +56,22 @@ namespace Sucursales
             }
         }
 
-        public bool agregarSucursal(string nombre)
+        public bool agregarSucursal(string nombre, string descripcion, int idProvincia, string direcccion)
         {
             int cantFilas = 0;
 
             Sucursal cat = new Sucursal();
             cat.Nombre_Sucu = nombre;
+            cat.Desc_Sucu = descripcion;
+            cat.Dire_Sucu = direcccion;
+            cat.Id_Prov = idProvincia;
+
+
 
             DaoSucursal dao = new DaoSucursal();
+
+
+
             if (dao.existeSucursal(cat) == false)
             {
                 cantFilas = dao.agregarSucursal(cat);

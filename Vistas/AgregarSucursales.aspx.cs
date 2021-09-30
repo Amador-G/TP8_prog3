@@ -11,8 +11,11 @@ namespace Vistas
 {
     public partial class AgregarSucursales : System.Web.UI.Page
     {
+        GestionSucursales gs = new GestionSucursales();
+
         protected void Page_Load(object sender, EventArgs e)
         {
+           
             if (!IsPostBack)
             {
                 GestionSucursales Provincias = new GestionSucursales();
@@ -21,6 +24,11 @@ namespace Vistas
                 ddlProvinciasSuc.DataValueField = "Id_Provincia";
                 ddlProvinciasSuc.DataBind();
             }
+        }
+
+        protected void btnAceptar_Click(object sender, EventArgs e)
+        {
+            gs.agregarSucursal(txtNombreSuc.Text, txtDescripcionSuc.Text, Convert.ToInt32(ddlProvinciasSuc.SelectedValue), txtDireccionSuc.Text);
         }
     }
 }

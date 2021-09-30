@@ -60,7 +60,7 @@ namespace Dao
 
         public int agregarSucursal(Sucursal cat)
         {
-            cat.Id_sucu = ds.ObtenerMaximo("Select max(idSucursal)from Sucursal") + 1;
+            cat.Id_sucu = ds.ObtenerMaximo("Select max(Id_Sucursal)from Sucursal") + 1;
             SqlCommand comando = new SqlCommand();
             ArmarParametrosSucursalAgregar(ref comando, cat);
             return ds.EjecutarProcedimientoAlmacenado(comando, "spAgregarSucursal");
@@ -76,8 +76,6 @@ namespace Dao
         private void ArmarParametrosSucursalAgregar(ref SqlCommand comando, Sucursal cat)
         {
             SqlParameter SqlParametros = new SqlParameter();
-            SqlParametros = comando.Parameters.Add("@IDSUCURSAL", SqlDbType.Int);
-            SqlParametros.Value = cat.Id_sucu;
             SqlParametros = comando.Parameters.Add("@NOMBRESUCU", SqlDbType.NVarChar);
             SqlParametros.Value = cat.Nombre_Sucu;
             SqlParametros = comando.Parameters.Add("@DESCRIPCION", SqlDbType.NVarChar);
