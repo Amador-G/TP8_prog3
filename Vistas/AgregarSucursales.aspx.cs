@@ -28,7 +28,14 @@ namespace Vistas
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-            gs.agregarSucursal(txtNombreSuc.Text, txtDescripcionSuc.Text, Convert.ToInt32(ddlProvinciasSuc.SelectedValue), txtDireccionSuc.Text);
+            if (gs.agregarSucursal(txtNombreSuc.Text, txtDescripcionSuc.Text, Convert.ToInt32(ddlProvinciasSuc.SelectedValue), txtDireccionSuc.Text))
+            {
+                lblMensajeAgregado.Text = "Sucurasl agregada con exito";
+            }
+            else 
+            {
+                lblMensajeAgregado.Text = "No se pudo agregar la sucursal";
+            }
         }
     }
 }
