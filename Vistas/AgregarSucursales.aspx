@@ -58,7 +58,9 @@
                     <td class="auto-style7">
                         <asp:TextBox ID="txtNombreSuc" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style7">
+                        <asp:RequiredFieldValidator ID="rvtxtNombre" runat="server" ControlToValidate="txtNombreSuc" ErrorMessage="Ingrese un nombre" ValidationGroup="vgErrores">*</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style6">&nbsp;</td>
@@ -66,7 +68,9 @@
                     <td class="auto-style7">
                         <asp:TextBox ID="txtDescripcionSuc" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style7">
+                        <asp:RequiredFieldValidator ID="rvDescripcion" runat="server" ControlToValidate="txtDescripcionSuc" ErrorMessage="Ingrese una Descripcion" ValidationGroup="vgErrores">*</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style6">&nbsp;</td>
@@ -83,7 +87,9 @@
                     <td class="auto-style7">
                         <asp:TextBox ID="txtDireccionSuc" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style7">
+                        <asp:RequiredFieldValidator ID="rvDireccion" runat="server" ErrorMessage="Ingrese una direccion" ValidationGroup="vgErrores">*</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style6">&nbsp;</td>
@@ -99,7 +105,9 @@
                     <td class="auto-style7">
                         <asp:Label ID="lblMensajeAgregado" runat="server"></asp:Label>
                     </td>
-                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style7">
+                        <asp:ValidationSummary ID="vlErrores" runat="server" ValidationGroup="vgErrores" />
+                    </td>
                 </tr>
             </table>
         </div>

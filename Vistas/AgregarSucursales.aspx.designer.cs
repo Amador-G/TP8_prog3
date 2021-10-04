@@ -60,6 +60,15 @@ namespace Vistas
         protected global::System.Web.UI.WebControls.TextBox txtNombreSuc;
 
         /// <summary>
+        /// Control rvtxtNombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rvtxtNombre;
+
+        /// <summary>
         /// Control txtDescripcionSuc.
         /// </summary>
         /// <remarks>
@@ -67,6 +76,15 @@ namespace Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDescripcionSuc;
+
+        /// <summary>
+        /// Control rvDescripcion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rvDescripcion;
 
         /// <summary>
         /// Control ddlProvinciasSuc.
@@ -87,6 +105,15 @@ namespace Vistas
         protected global::System.Web.UI.WebControls.TextBox txtDireccionSuc;
 
         /// <summary>
+        /// Control rvDireccion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rvDireccion;
+
+        /// <summary>
         /// Control btnAceptar.
         /// </summary>
         /// <remarks>
@@ -103,5 +130,14 @@ namespace Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblMensajeAgregado;
+
+        /// <summary>
+        /// Control vlErrores.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary vlErrores;
     }
 }

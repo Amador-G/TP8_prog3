@@ -66,7 +66,9 @@
 &nbsp;
                     <asp:Button ID="btnMostarTodos" runat="server" Text="Mostrar todos" OnClick="MostarTodo" />
                 </td>
-                <td class="auto-style13">&nbsp;</td>
+                <td class="auto-style13">
+                    <asp:RegularExpressionValidator ID="rvtxtIdsucursal" runat="server" ControlToValidate="txtIDsucursal" ErrorMessage="RegularExpressionValidator" ValidationExpression="^\d+$">Solo numeros!!!</asp:RegularExpressionValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style3">

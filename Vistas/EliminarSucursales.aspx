@@ -43,7 +43,9 @@
                         <asp:TextBox ID="txtEliminarSucursal" runat="server"></asp:TextBox>
 &nbsp;<asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="rvValidacionEliminiar" runat="server" ControlToValidate="txtEliminarSucursal" ErrorMessage="RegularExpressionValidator" ValidationExpression="^\d+$">Solo numeros!!!</asp:RegularExpressionValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
