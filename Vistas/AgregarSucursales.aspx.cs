@@ -30,12 +30,20 @@ namespace Vistas
         {
             if (gs.agregarSucursal(txtNombreSuc.Text, txtDescripcionSuc.Text, Convert.ToInt32(ddlProvinciasSuc.SelectedValue), txtDireccionSuc.Text))
             {
-                lblMensajeAgregado.Text = "Sucurasl agregada con exito";
+                LimpiezaCampos();
+                lblMensajeAgregado.Text = "Sucursal agregada con exito";
             }
             else 
             {
                 lblMensajeAgregado.Text = "No se pudo agregar la sucursal";
             }
+        }
+
+        private void LimpiezaCampos()
+        {
+            txtNombreSuc.Text = "";
+            txtDescripcionSuc.Text = "";
+            txtDireccionSuc.Text = "";
         }
     }
 }

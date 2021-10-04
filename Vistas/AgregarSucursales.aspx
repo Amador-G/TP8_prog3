@@ -83,12 +83,12 @@
                 </tr>
                 <tr>
                     <td class="auto-style6">&nbsp;</td>
-                    <td class="auto-style7">Dirrecion :</td>
+                    <td class="auto-style7">Direccion :</td>
                     <td class="auto-style7">
                         <asp:TextBox ID="txtDireccionSuc" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style7">
-                        <asp:RequiredFieldValidator ID="rvDireccion" runat="server" ErrorMessage="Ingrese una direccion" ValidationGroup="vgErrores">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rvDireccion" runat="server" ErrorMessage="Ingrese una direccion" ValidationGroup="vgErrores" ControlToValidate="txtDireccionSuc">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
