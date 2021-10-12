@@ -18,11 +18,13 @@ namespace Vistas
            
             if (!IsPostBack)
             {
-                GestionSucursales Provincias = new GestionSucursales();
-                ddlProvinciasSuc.DataSource = Provincias.getProvincias();
-                ddlProvinciasSuc.DataTextField = "DescripcionProvincia";
-                ddlProvinciasSuc.DataValueField = "Id_Provincia";
-                ddlProvinciasSuc.DataBind();
+                 GestionSucursales Provincias = new GestionSucursales();
+                
+                 ddlProvinciasSuc.DataSource = Provincias.getProvincias();
+                 ddlProvinciasSuc.DataTextField = "DescripcionProvincia";
+                 ddlProvinciasSuc.DataValueField = "Id_Provincia";
+                 ddlProvinciasSuc.DataBind();
+                ddlProvinciasSuc.Items.Insert(0, "Seleccionar provincia");
             }
         }
 
@@ -44,6 +46,11 @@ namespace Vistas
             txtNombreSuc.Text = "";
             txtDescripcionSuc.Text = "";
             txtDireccionSuc.Text = "";
+        }
+
+        protected void ddlProvinciasSuc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

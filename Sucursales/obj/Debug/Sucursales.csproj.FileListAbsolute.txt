@@ -20,3 +20,14 @@ C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\obj\Debug\Sucursales.csproj.Cor
 C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\obj\Debug\Sucursales.csproj.CopyComplete
 C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\obj\Debug\Sucursales.dll
 C:\Users\Sebas\Source\Repos\TP8_prog3\Sucursales\obj\Debug\Sucursales.pdb
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Sucursales\bin\Debug\Sucursales.dll
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Sucursales\bin\Debug\Sucursales.pdb
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Sucursales\bin\Debug\Dao.dll
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Sucursales\bin\Debug\Entidades.dll
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Sucursales\bin\Debug\Dao.pdb
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Sucursales\bin\Debug\Entidades.pdb
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Sucursales\obj\Debug\Sucursales.csproj.AssemblyReference.cache
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Sucursales\obj\Debug\Sucursales.csproj.CoreCompileInputs.cache
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Sucursales\obj\Debug\Sucursales.csproj.CopyComplete
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Sucursales\obj\Debug\Sucursales.dll
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Sucursales\obj\Debug\Sucursales.pdb

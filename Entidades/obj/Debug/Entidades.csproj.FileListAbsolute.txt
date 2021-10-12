@@ -10,3 +10,9 @@ C:\Users\Sebas\Source\Repos\TP8_prog3\Entidades\obj\Debug\Entidades.csproj.Assem
 C:\Users\Sebas\Source\Repos\TP8_prog3\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Sebas\Source\Repos\TP8_prog3\Entidades\obj\Debug\Entidades.dll
 C:\Users\Sebas\Source\Repos\TP8_prog3\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Entidades\bin\Debug\Entidades.dll
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Entidades\obj\Debug\Entidades.dll
+C:\Users\Diamela\Desktop\proyect\tp8prog3\TP8_prog3\Entidades\obj\Debug\Entidades.pdb

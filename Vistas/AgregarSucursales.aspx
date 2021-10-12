@@ -16,6 +16,14 @@
         .auto-style7 {
             width: 196px;
         }
+        .auto-style8 {
+            width: 195px;
+            height: 26px;
+        }
+        .auto-style9 {
+            width: 196px;
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -59,7 +67,7 @@
                         <asp:TextBox ID="txtNombreSuc" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style7">
-                        <asp:RequiredFieldValidator ID="rvtxtNombre" runat="server" ControlToValidate="txtNombreSuc" ErrorMessage="Ingrese un nombre" ValidationGroup="vgErrores">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rvtxtNombre" runat="server" ControlToValidate="txtNombreSuc" ErrorMessage="Ingrese un nombre">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -69,17 +77,19 @@
                         <asp:TextBox ID="txtDescripcionSuc" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style7">
-                        <asp:RequiredFieldValidator ID="rvDescripcion" runat="server" ControlToValidate="txtDescripcionSuc" ErrorMessage="Ingrese una Descripcion" ValidationGroup="vgErrores">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rvDescripcion" runat="server" ControlToValidate="txtDescripcionSuc" ErrorMessage="Ingrese una descripcion">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style6">&nbsp;</td>
-                    <td class="auto-style7">Provincia :</td>
-                    <td class="auto-style7">
-                        <asp:DropDownList ID="ddlProvinciasSuc" runat="server">
+                    <td class="auto-style8"></td>
+                    <td class="auto-style9">Provincia :</td>
+                    <td class="auto-style9">
+                        <asp:DropDownList ID="ddlProvinciasSuc" runat="server" Height="16px" OnSelectedIndexChanged="ddlProvinciasSuc_SelectedIndexChanged" Width="128px">
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style9">
+                        <asp:RequiredFieldValidator ID="rvProvincia" runat="server" ControlToValidate="ddlProvinciasSuc" ErrorMessage="Seleccione una provincia" InitialValue="Seleccionar provincia">*</asp:RequiredFieldValidator>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style6">&nbsp;</td>
@@ -88,7 +98,7 @@
                         <asp:TextBox ID="txtDireccionSuc" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style7">
-                        <asp:RequiredFieldValidator ID="rvDireccion" runat="server" ErrorMessage="Ingrese una direccion" ValidationGroup="vgErrores" ControlToValidate="txtDireccionSuc">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rvDireccion" runat="server" ControlToValidate="txtDireccionSuc" ErrorMessage="Ingrese la direccion">*</asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -106,7 +116,7 @@
                         <asp:Label ID="lblMensajeAgregado" runat="server"></asp:Label>
                     </td>
                     <td class="auto-style7">
-                        <asp:ValidationSummary ID="vlErrores" runat="server" ValidationGroup="vgErrores" />
+                        <asp:ValidationSummary ID="vlErrores" runat="server" />
                     </td>
                 </tr>
             </table>
